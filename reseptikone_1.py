@@ -16,14 +16,12 @@ class Resepti:
         self.valmistusaika = valmistusaika
 
     # Määritellään str-metodilla, miten vastaus näytetään.
-    # PALAUTANKO VÄÄRÄÄ ASIAA? (RUOKA)
     def __str__(self):
         if self.linkki:
             return(f"{self.ruoka} ({self.valmistusaika} min): {self.linkki}")
         return self.ruoka
     
     # TARVITAANKO TÄTÄ????? MITÄ TÄMÄ __REPR__ MEINASIKAAN?
-    # PALAUTANKO VÄÄRÄÄ ASIAA? (RUOKA)
     def __repr__(self):
         return self.ruoka
 
